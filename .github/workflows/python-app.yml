@@ -29,6 +29,7 @@ jobs:
     env:
         ELEMENTS_EMAIL: ${{ secrets.ELEMENTS_EMAIL }}
         ELEMENTS_PASSWORD: ${{ secrets.ELEMENTS_PASSWORD }}
+        ELEMENTS_STUDIO_ID: ${{ secrets.ELEMENTS_STUDIO_ID }}
 
     steps:
     - uses: actions/checkout@v3
