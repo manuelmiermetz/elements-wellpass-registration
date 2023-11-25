@@ -4,12 +4,10 @@ Element Fitness would like you to register for a slot at their gym a day in adva
 
 This script works standalone but you dont need to configure a server to run it daily. The Github Actions pipeline is used to run this script serverless.
 Just fork this repo and set the secrets/variable. The github actions are configured to run every day at 11 o'clock silently. If something goes wrong than the Error message is passed to you as E-Mail.
-But if they dont changes something on their page, than this script should run without a problem.
-
+But if they do not change something on their page, than this script should run without a problem.
 
 
 To set environment secrets/variable in GitHub, follow these steps:
-
 1. Navigate to the GitHub repository where you want to set the environment secrets.
 2. Click on the "Settings" tab located in the repository's navigation menu.
 3. In the left sidebar, click on "secrets and variables", than on "Actions"
@@ -17,10 +15,9 @@ To set environment secrets/variable in GitHub, follow these steps:
 5. Create a Secret for "ELEMENTS_EMAIL" and "ELEMENTS_PASSWORD" with this names and the value.
 6. Create a Secret for "ELEMENTS_STUDIO_ID" and set your Studio ID with the correct number from the List below 
 
-
 | key | Value | Type |
 | --- | --- | --- |
-|ELEMENTS_STUDIO_ID| 62 ( See List below) | variable |
+|ELEMENTS_STUDIO_ID| 62 ( See List below) | secret |
 |ELEMENTS_EMAIL | mail@example.com | secret |
 |ELEMENTS_PASSWORD | yourElementsPassword | secret |
 
